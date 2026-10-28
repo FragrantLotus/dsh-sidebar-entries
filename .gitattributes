@@ -1,0 +1,6 @@
+# Keep LF in the working tree. Windows checkouts default to CRLF, and a
+# CRLF cordis.patch.yml is a config file the Host parses on every boot —
+# not a place to introduce a line-ending variable nobody tests.
+* text=auto eol=lf
+*.png binary
+*.tgz binary
