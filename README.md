@@ -179,11 +179,23 @@ screen.
 
 ## Install
 
+From npm (recommended — prebuilt, no build-approval prompt):
+
 ```bash
 dsh plugin --profile web add dsh-sidebar-entries
 ```
 
-Restart the web app once so the bundle patch layer is picked up, then reload the page.
+From source, straight off GitHub:
+
+```bash
+dsh plugin --profile web add https://github.com/FragrantLotus/dsh-sidebar-entries
+```
+
+Either way, restart the web app once so the bundle patch layer is picked up, then reload the page.
+
+The package has **no dependencies** — it is two plain ES modules (`lib/index.js` on the Host,
+`lib/client.js` in the browser) plus a `cordis.patch.yml`. Nothing is fetched at install time and
+nothing is built.
 
 ## Diagnostics
 
