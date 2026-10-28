@@ -1,0 +1,55 @@
+{
+  "name": "dsh-sidebar-entries",
+  "version": "0.7.13",
+  "description": "Left sidebar panel list for DeepSeek Harness: long-press drag to reorder panel icons, one arrow to fold them all, whole-row height caps, a pinned-session section that keeps its live running / waiting status, draggable conversation view tabs, archived Sessions sunk to the bottom of each group, and a generic footer lift that pulls any plugin's sidebar-footer entry up into the rail.",
+  "icon": "icon.svg",
+  "author": "fragrantlotus",
+  "type": "module",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0",
+    "dsh": ">=0.2.0-rc.2 || >=0.2.1-rc.2"
+  },
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "icon.svg",
+    "lib/client.js",
+    "lib/index.js",
+    "cordis.patch.yml",
+    "locale/en.json",
+    "locale/zh.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "sidebar",
+    "sidebar-panels",
+    "drag",
+    "reorder",
+    "pinned-sessions",
+    "tabs",
+    "workspace",
+    "ui"
+  ],
+  "license": "MIT"
+}

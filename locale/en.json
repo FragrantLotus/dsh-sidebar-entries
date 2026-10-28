@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Sidebar Entries",
+    "description": "Left sidebar panel list for DeepSeek Harness: long-press drag to reorder panel icons, one arrow to fold them all, whole-row height caps, a pinned-session section that keeps its live running / waiting status, draggable conversation view tabs, archived Sessions sunk to the bottom of each group, and a generic footer lift that pulls any plugin's sidebar-footer entry up into the rail."
+  }
+}
