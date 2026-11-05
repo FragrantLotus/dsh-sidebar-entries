@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/dsh-sidebar-entries)](https://www.npmjs.com/package/dsh-sidebar-entries)
 
-![The sidebar with each enhanced region outlined](docs/demo.png)
+![The sidebar with each enhanced region outlined](https://raw.githubusercontent.com/FragrantLotus/dsh-sidebar-entries/HEAD/docs/demo.png)
 
 A [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) plugin that makes the
 left sidebar behave the way a long list should: **drag to reorder** the panel icons, **one
